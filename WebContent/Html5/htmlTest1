@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  </head>
+  <body>
+    <table border="1">
+      <caption><b>테이블 제목 Caption tag</b></caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>페이스북</th>
+          <th>카카오톡</th>
+          <th>밴드</th>
+          <th>인스타그램</th>
+          <th>트위터</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>2015년</b></td>
+          <td>77.1</td>
+          <td>58.3</td>
+          <td>47.2</td>
+          <td>15.2</td>
+          <td>22.8</td>
+        </tr>
+        <tr>
+          <td><b>2016년</b></td>
+          <td>79.2</td>
+          <td>61.9</td>
+          <td>53.3</td>
+          <td>17.4</td>
+          <td>24.2</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+  <style>
+    thead{
+      background-color: chocolate;
+    }
+  </style>
+</html>

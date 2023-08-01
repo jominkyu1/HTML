@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body>
+	<h2>select 와 textarea, image 입력 양식 등</h2>
+	<form method="post" action="#">
+		<form>
+			자동차: <select name="cars">
+				<option value="bmw">BMW</option>
+				<option value="benz">BENZ</option>
+				<option value="hyundai" selected>Hyundai</option>
+			</select>
+			<br>
+			고객의견: <textarea name="feedback" rows="5" cols="50"></textarea>
+			<br>
+			<button type="submit"><img src="../images/coffee01.jpg" width="45px">Submit</button>
+			<!--button의 type 기본값은 submit-->
+			<input type="image" src="../images/big_space.png" width="20%" alt="제출 버튼">
+			<!--input type의 image는 이미지 삽입 + 자료제출기능 동시-->
+			<button type="reset">Reset</button>
+		</form>
+	</form>
+</body>
+<style>
+	form{
+		width: fit-content;
+		border: 2px solid #222;
+		font-size: 17px;
+		padding: 4%;
+
+	}
+</style>
+</html>

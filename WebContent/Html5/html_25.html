@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body>
+	<h2>로그인 입력폼</h2>
+	<form method="post" action="#">
+		<!-- 
+			1. form 태그안에 입력한 자료는 서버로 전송이 가능
+			 가. get방식 : method 속성을 생략하면 기본값이 get방식
+			 	 			  웹주소창에 서버로 전달되는 자료가 노출. 보안상 좋지않음(자료 길이제한)
+			 나. post방식: 본문 내용속에 포함이 되어 서버로 자료가 전달됨.
+			 				   자료노출이 없고 보안성 우수, 자료 길이 제한없음
+			 	자료실 기능(파일첨부 등)을 만들기 위해서는 post방식을 사용해야 함
+			 	
+		    2. action 속성값에는 서버파일 주소 (#의 의미는 다른곳으로 이동하는 통로를 막았다는의미)
+		 -->
+		<table border="1">
+		 <tr>
+		  <th>아이디</th>
+		  <td><input type="text" name="id" size="14"></td> <!-- text는 한줄입력 필드 -->
+		  <th rowspan="2" style="border-collapse: collapse;">
+		   <input type="submit" value="로그인">
+		  </th>
+		 </tr>
+		 <tr>
+		  <th>비밀번호</th>
+		  <td><input type="password" name="pwd" size="13"></td>
+		  <td></td>
+		 </tr>
+		 <tr>
+		  <th colspan="3">
+		   <input type="button" value="아이디/비번찾기">
+		   <input type="button" value="회원가입">
+		  </th>
+		 </tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+
+<body>
+	<form method="post" action="#">
+		<h1>다양한 입력양식의 속성</h1>
+		이메일: <input type="email" required>
+		<!--required 속성은 유효한 이메일인지 검사
+		
+		속성의 종류
+	1. autocomplete : 자동으로 입력 완성
+	2. autofocus : 페이지가 로드되면 자동으로 포커스
+	3. placeholder : 입력 힌트를 희미하게 보여줌
+	4. readonly : 읽기속성
+	5. pattern : 허용하는 입력형태를 정규표현식으로 지정-->
+		<br>
+		검색: <input type="search" required><br>
+		URL: <input type="url" required><br>
+		전화번호: <input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title=""###-####-####><br>
+		<!--pattern 속성
+		0-9사이 정수 {3or4}번반복, 입력검증을 하기위해서는 title에 올바른 입력형태를 지정해야 함.-->
+		<input type="submit" value="확인">
+	</form>
+</body>
+</html>
