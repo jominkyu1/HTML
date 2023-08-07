@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0 auto;
+      width: 95vw;
+      height: 95vh;
+      border: 1px solid red;
+
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    table, th, td {
+      border: 1px solid red;
+      empty-cells: hide;
+    }
+
+    table{
+      width: 50%;
+    }
+
+    th{
+      height: 50px;
+    }
+
+    td{
+      text-align: center;
+      height: 40px;
+      vertical-align: bottom;
+    }
+
+    caption{
+      padding-top: 10px;
+      caption-side: bottom;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>표의 제목입니다.</caption>
+    <tr>
+      <th>제목하나</th>
+      <th>제목둘</th>
+      <th>제목셋</th>
+    </tr>
+    <tr>
+      <td>내용하나</td>
+      <td>내용둘</td>
+      <td>내용셋</td>
+    </tr>
+    <tr>
+      <td>내용하나</td>
+      <td>내용둘</td>
+      <td></td>
+    </tr>
+  </table>
+</body>
+</html>

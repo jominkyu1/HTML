@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  a:link{ /*하이퍼링크 된곳 CSS 효과*/
+    color:red;
+  }
+
+  a:visited{ /*하이퍼링크 클릭 한 후 CSS 효과*/
+    color:yellow;
+  }
+
+  a:hover{ /*하이퍼링크 마우스 오버시 CSS 효과*/
+    color:blue;
+    font-size: 36px;
+  }
+
+  a:active{ /*하이퍼링크 클릭 한 순간 CSS 효과*/
+    font-weight: bolder;
+    color: black;
+    font-size: 60px;
+    background-color: gray;
+  }
+</style>
+<body>
+  <p>
+    <a href="#" target="_blank">
+      여기가 링크입니다
+    </a>
+    <!-- #의 의미는 이동을 막았다는 의미, 즉 현재창에서
+      이벤트나 UI 효과 확인 용도-->
+  </p>
+</body>
+</html>

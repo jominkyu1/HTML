@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+div.menu{
+  border: 2px solid rgba(174, 172, 172, 0.342);
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+  /* 상하 안여백10, 좌우안여백0*/
+}
+ul li{
+  display:inline;
+  /*ul li는 볼록수준 요소 태그이지만 inline으로 변경시 인라인 요소 태그로 변경해준다.*/
+
+  text-transform: uppercase;
+  padding: 0px 5px;
+  letter-spacing: 5px; /* 글자간 간격*/
+} 
+
+ul li a{
+  text-decoration-line: none; /* 하이퍼링크 밑줄선 제거 */
+}
+ul li a:visited{
+  color: blue;
+}
+ul li a:hover{
+  text-decoration: underline rgb(16, 17, 16);
+}
+</style>
+<body>
+  <h2 style="text-align: center;">웹표준 접근성에서 ul li 태그는 메뉴를 구성할 때 사용</h2>
+
+<div class="menu">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  <div>
+    ID: <input type="text"><br>
+    Password: <input type="password">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #header{
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+  }
+  #nav{
+    width: 30%;
+    height: 100px;
+    background-color: red;
+
+    float: left;
+    /*레이아웃을 왼쪽에 배치*/
+  }
+  #content{
+    width: 70%;
+    height: 100px;
+    background-color: blue;
+
+    float: right;
+  }
+  #footer{
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+    clear:both;
+    /*수평정렬을 하려는 float 속성 제거하여 따로 하단에 배치*/
+    /*또한 float 속성에 의해 UI가 깨지는 현상을 방지*/
+  }
+
+</style>
+<body>
+  <div id="wrapper">
+    <div id="header"> header </div>
+    <div id="nav"> nav </div>
+    <div id="content"> content </div>
+    <div id="footer"> fooer </div>
+  </div>
+</body>
+</html>

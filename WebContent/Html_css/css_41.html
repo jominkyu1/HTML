@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가로줄 전체를 차지하는 볼록수준 요소태그</title>
+</head>
+<body>
+  <h1 style="background-color: red;">H1 영역 </h1>
+  <div style="background-color: aqua;">DIV 영역</div>
+  <p style="background-color: yellow;">P 문단태그 영역</p>
+
+  <pre style="background-color: bisque;">
+public String boardView(Model model, Integer id){
+  model.addAttribute("board", boardService.boardView(id));
+  return "boardview";
+}
+PRE 태그 영역
+  </pre>
+</body>
+</html>

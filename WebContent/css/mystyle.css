@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
 h1{
-  background-color: blue;
+  background-color: rgb(169, 169, 186);
+  font: italic 50px Georgis, serif;
+}
+
+p.first{
+  color: aquamarine;
 }
