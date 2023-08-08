@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+<style>
+  div{
+    width:100px;
+    height: 100px;
+
+    background-color: red;
+    position:relative;
+
+    animation: 2s myanim; /* 지속시간, 키프레임  이름 지정 myanim*/
+    animation-iteration-count: 10;
+  }
+  @keyframes myanim /* Keyframe 정의*/
+  {
+    0%{
+      background-color: red;
+      left:0px;
+      right:0px;
+      top:0px;
+    }
+    25%{
+      background-color: blue;
+      left:100px;
+      right:100px;
+      top:0px;
+    }
+    50%{
+      background-color: yellow;
+      left:200px;
+      right:200px;
+      top:50px;
+    }
+    75%{
+      background-color: black;
+      left:100px;
+      right:100px;
+      top:0px;
+    }
+    100%{
+      background-color: red;
+      left:0px;
+      right:0px;
+      top:0px;
+    }
+  }
+</style>
+<body>
+  <div></div>
+</body>
+</html>
