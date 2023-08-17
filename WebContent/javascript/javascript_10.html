@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var x,y,input;
+
+    input = window.prompt("정수 숫자만 입력>>", "이곳에 입력");
+    //취소시 null반환
+
+    alert(input);
+    if( input != null ){
+      x=parseInt(input);
+      document.write(x+"*2= ");
+      document.write(x*2);
+
+    }
+  </script>
+</body>
+</html>

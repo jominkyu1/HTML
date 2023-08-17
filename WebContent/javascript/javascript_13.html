@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var grade = window.prompt("학점입력 A-C");
+
+    if(grade==null){
+      alert('확인을 입력하세요');
+    } else { 
+      grade=grade.toUpperCase();
+
+      switch(grade){
+        case 'A': alert('A Good'); break;
+        case 'B': alert('B Normal'); break;
+        case 'C': alert('C failed'); break;
+        default: alert('알 수 없는 학점');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //type 속성 생략가능
+    var a=3;
+    var b=4;
+
+    alert((a==3) && (b==4)); //true
+    alert((a==3) && (b==55555)); //false
+
+    //삼항조건
+    
+    var max_value= (a>b)? a:b;
+    document.write(max_value + "<hr>"); //4
+
+    var result= 3+4*5;
+    //문제) 자바스크립트 연산자 우선순위에서 result 변수값은?
+    //정답) 35가 아닌 23
+    document.write(result);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

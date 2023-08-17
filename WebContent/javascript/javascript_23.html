@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var greet = function() {
+      alert("익명함수");
+    }
+    greet();
+
+    function show() {
+      name = "var키워드로 변수 선언하지않고 값을 바로 대입하면 전역변수로 사용된다."
+      alert(name);
+    }
+    show();
+    document.write(name);
+
+    function a(){
+      document.write("<hr>" + name);
+    }
+
+    a();
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    
+    function guess() {
+      var num, times;
+      num=100;
+      var iNum = document.getElementById("num").value;
+      var result = document.getElementById("result");
+      var iTimes = document.getElementById("times");
+      
+      iTimes.value = parseInt(iTimes.value) + 1;
+
+      if(iNum==num){
+        result.value="정답";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h2>숫자 맞추기 게임</h2>
+  <form>
+    숫자: <input type="text" id="num">
+    추측횟수: <input type="text" id="times" value="0">
+    결과: <input type="text" id="result">
+
+    <button type="button" onclick="guess()">확인</button>
+  </form>
+</body>
+</html>

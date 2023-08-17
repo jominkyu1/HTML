@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Javascript Array</h2>
+  <script>
+    var fruits = ["apple", "banana", "grape"];
+
+    fruits.forEach( 
+      element => document.write(element + "<br>")
+      )
+
+    document.write("fruits length?: " + fruits.length + "<hr>");
+
+    var compArray = new Array();
+    compArray.push("노트북");
+    compArray.push(500);
+    compArray.push(new Date());
+
+    document.write(compArray[0] + "<br>" +compArray[1] + "<br>" + compArray[2] + "<hr>");
+
+    var fruitArray = new Array();
+    fruitArray['a']="사과";
+    fruitArray['b']="복숭아";
+
+    document.write(fruitArray['a'] + "<br>");
+    document.write(fruitArray['b'] + "<hr>");
+
+    var test = fruitArray.toString;
+    document.write(test);
+  </script>
+</body>
+</html>
