@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  var number = 55;
+
+  function throws(){
+    try {
+      var x=document.getElementById('number').value;
+      if(x=="") throw '입력값 없음';
+      if(isNaN(x)) throw '숫자가 아님'; //NaN -> Not A Number
+      if(x==number) throw '정답이다';
+    } catch (error) {
+      var y=document.getElementById('result');
+      y.value= error;
+    }
+  }
+</script>
+<body>
+  <h2>throw: 인위적 예외</h2>
+  <p1>1~100 숫자: <input type="text" id="number"></p1>
+  <button onclick="throws()">OK</button>
+  <input type="text" id="result">
+</body>
+</html>

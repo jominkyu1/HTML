@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>prompt() 함수 예제 2</h2>
+  <script>
+    //문제) prompt() 내장함수를 이용하여 1~100 숫자입력받기, parseInt()로 파싱하여 유효성검사후에 누적합 구한 후 alert()출력
+    var result=0;
+    var inputNum = parseInt(window.prompt("숫자 1~100이하 입력"));
+
+    if(inputNum>=1 && inputNum <=100){
+      for(var i=1; i<=inputNum; i++){
+        result += i;
+      }
+    } else {
+      alert("1~100사이 정수값만 입력하세요.");
+    }
+
+    alert("1부터 " + inputNum + "까지의 총합: " + result);
+    
+  </script>
+</body>
+</html>

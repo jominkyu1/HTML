@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    var newsStr, n, i;
+
+    function scro(){
+      newsStr="뉴스 속보입니다. 하나둘셋넷다섯여섯";
+      i=0;
+      n=newsStr.length;
+      
+      scro2();
+    }
+
+    function scro2(){
+      document.myform.news.value = newsStr.substring(0, i);
+      ++i;
+
+      if(i>n) i=0;
+
+      setTimeout("scro2()", 500);
+    }
+  </script>
+</head>
+<body onload="scro();"> <!--onLoad는 웹페이지 시작과 동시에 발생하는 이벤트 핸들러-->
+  <form name="myform">
+    <input type="text" name="news" size="200">
+  </form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function checkId() {
+      var result_id = document.getElementById('id').value;
+      alert("ID길이:"+result_id.length);
+
+      if(result_id.length<6){
+        alert('아이디는 6자 이상이여야합니다.')
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>id길이 유효성 검사</h1>
+  <form>
+    ID: <input type="text" id="id">
+    <input type="button" value="검사" onclick="checkId();">
+  </form>
+</body>
+</html>

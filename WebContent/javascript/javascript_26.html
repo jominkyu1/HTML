@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function max(firstNum, secondNum){
+    if(firstNum==secondNum){
+      return "같은 숫자";
+    } else if(firstNum > secondNum){
+      return firstNum;
+    } else {
+      return secondNum;
+    }
+  }
+</script>
+<body>
+  <h2>window객체 하위의 prompt() 내장함수 실습</h2>
+  <script>
+    var a = window.prompt("정수 숫자입력: ");
+    var b = prompt("두번째 정수 숫자 입력: ");
+
+    var result = max(a, b);
+    document.write(a + "와" + b + " 중 더 큰 수: " + result);
+  </script>
+</body>
+</html>
