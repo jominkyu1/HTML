@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function sub(){
+    var x = document.getElementById('name');
+    x.value = x.value.toLowerCase();
+  }
+</script>
+<body>
+  <h2>입력필드를 벗어나면 영소문자로 변경됨</h2>
+  <input type="text" id="name" onchange="sub();">
+</body>
+</html>

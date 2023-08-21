@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function changeImage(){
+    document.getElementById("image").src="../images/small_sun.jpg";
+  }
+</script>
+<body>
+  <img id="image" src="../images/small_space.jpeg" width="120px" height="100px" alt="우주">
+  <hr>
+  <button type="button" onclick="changeImage();">이미지 변경</button>
+  <input type="button" value="요소숨김"
+    onclick="document.getElementById('image').style.visibility='hidden'">
+  <input type="button" value="요소표시"
+    onclick="document.getElementById('image').style.visibility='visible'">
+</body>
+</html>

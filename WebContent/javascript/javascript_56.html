@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function view(mt){
+    var i = mt.mountain.selectedIndex;
+    alert(mt.mountain.options[i].value);
+  }
+</script>
+<body>
+  <h2> 좋아하는 산 </h2>
+  <form>
+    <select name="mountain">
+      <option value="한라산">한라산</option>
+      <option value="설악산">설악산</option>
+    </select>
+    <hr>
+    <input type="button" value="확인" onclick="view(this.form)">
+  </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function checkLength(id, min, max){
+    var idLength = id.value.length;
+    
+    if(idLength<=8 && idLength>=6){
+      f.submit();
+    } else {
+      alert('6~8자 사이');
+      id.value = '';
+      id.focus();
+    }
+
+  }
+</script>
+<body>
+  <h2> 데이터길이 유효성 검증 </h2>
+  <form id="form1"name="f" method="get" action="id_ok.jsp">
+    아이디 <input type="text" id="id2">
+    <input type="button" value="확인" onclick="checkLength(document.getElementById('id2'), 6, 8);">
+  </form>
+</body>
+</html>

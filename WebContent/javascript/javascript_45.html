@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function onMousein(elem){
+    elem.style.border = "2px solid red";
+  }
+
+  function onMouseOut(elem){
+    elem.style.border = "";
+  }
+
+</script>
+<body>
+  <div style="background-color: yellow; width:500px; height: 200px;" onmouseover="onMousein(this)" onmouseout="onMouseOut(this)"> 테스트
+  </div>
+</body>
+</html>

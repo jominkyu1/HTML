@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function checkNumber(message){
+    var exp = /^[0-9]+$/; 
+      // 정규표현식
+      // ^는 시작, %는 끝, +는 한번 이상 반복
+      // [0-9] 0부터 9까지 숫자중의 하나를 한번이상 반복
+
+    if(document.getElementById('phone').value.match(exp)){
+      alert('숫자 입력 완료');
+    } else {
+      alert(message);
+    }
+  }
+</script>
+<body>
+  <form method="post" actipn="#">
+    휴대전화번호: <input type="tel" id="phone">
+    <input type="button" value="확인" onclick="checkNumber('숫자만 입력')">
+  </form>
+</body>
+</html>
