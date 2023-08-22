@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <button type="button">Show Image</button>
+  <img id="space" src="../images/small_sun.jpg" width="120" style="display:none">
+  <!-- display:none은 해당요소 안보이게하고, 자리차지도 X-->
+
+  <script>
+    $(document).ready(function(){
+      $('button').click(function(){
+        $('#space').show("slow");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./jquery-3.7.0.min.js"></script>
+</head>
+<style>
+  div.out{
+    width:230px;
+    height:150px;
+    background-color: yellow;
+  }
+</style>
+<body>
+  <h2> Mouserover 이벤트와 jQuery text()함수 </h2>
+  <div class="out">
+    <p>마우스를 여기로 움직이세요</p>
+    <p>0</p>
+  </div>
+  <script>
+    $i = 0; // $i는 jQuery 변수명
+    $('div.out').mouseover(function(){
+      //p태그의 첫번째 요소, 적용대상 자기자신
+      $("p:first", this).text("mouser over");
+      $("p:last", this).text(++$i);
+    });
+  </script>
+</body>
+</html>

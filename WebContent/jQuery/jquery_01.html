@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>첫번째 jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- CDN(Content Delivery Network의 약어)은 
+    원격으로 인터넷이 연결된 상태에서 jQuery(Javascript Framework) 라이브러리를 사용하는 것을 의미 -->
+</head>
+<script>
+  //$는 jQuery사용
+  $(document).ready(function(){ //문서가 준비되었으면 jQuer 함수를 사용하겠다는 의미
+    jQuery("h2").click(function(){ 
+      //jQuery 대신 $를 사용해도됨. h2 태그 요소에 클릭이벤트가 발생하면 실행됨.
+      $(this).hide();  //hide()함수는 요소 숨김
+    });
+  });
+</script>
+<body>
+  <h2>클릭하면 사라집니다.</h2>
+</body>
+</html>

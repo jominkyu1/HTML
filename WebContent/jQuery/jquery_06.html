@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./jquery-3.7.0.min.js"></script>
+</head>
+<body>
+  <input type="button" value="show Cat" id="cat">
+  <hr>
+  <img id="cat_image" src="../images/mountain.jpg" width="200" alt="고양이" style="display:none">
+
+  <script>
+    $(document).ready(function(){
+      $('#cat').click(function(){
+        $('#cat_image').toggle();
+      });
+    });
+  </script>
+</body>
+</html>

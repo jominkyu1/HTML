@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    $(document).ready(function(){
+      $('#fadein').click(function(){
+        $('#cat').fadeIn('slow');
+      })
+
+      $('#fadeout').click(function(){
+        $('#cat').fadeOut('slow');
+      })
+    });
+  </script>
+
+  <button type="button" id="fadein"> fade in </button>
+  <button type="button" id="fadeout"> fade out </button>
+
+  <hr>
+
+  <img src="../images/small_space.jpeg" id="cat">
+</body>
+</html>

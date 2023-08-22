@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function check(f){
+    var n=f.job.length;
+    
+    for(var i=0; i<n; i++){
+      if(f.job.options[i].selected){
+        alert(f.job.options[i].text + "이 선택됨");
+      }
+    }
+  }
+</script>
+<body>
+  <h2>Checkbox의 selected</h2>
+  <form id="f" style="border: 1px solid red">
+    <h3>당신의 직업</h3>
+    <select name="job" size="3" multiple>
+      <!-- multiple 속성은 여러개 항목을 동시 선택 가능하게 만듦 -->
+      <option>자바</option>
+      <option>데이터베이스 관리자</option>
+      <option>운동선수</option>
+    </select>
+
+    <hr>
+    <input type="button" value="확인" onclick="check(f)">
+  </form>
+</body>
+</html>

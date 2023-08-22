@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<script>
+  $(document).ready(function(){
+    $('#methodChain').click(function(){
+      $('#dog').show().fadeOut('slow').slideDown('slow').slideUp('slow');
+      //메서드 체이닝이란 여러개의 jQuery 함수를 한줄로 엮어 여러기능을 실행되게 하는법.
+    })
+  });
+</script>
+<body>
+  <input type="button" id="methodChain" value="메서드 체이닝">
+  <hr>
+  <img id="dog" src="../images/programmer.jpg" width="200" style="display: none">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<script>
+  $(document).ready(function(){
+    $('#text').click(function(){
+      alert($('#target').text());
+    });
+
+    $('#html').click(function(){
+      alert($('#target').html()); // strong 태그를 포함
+    });
+  });
+</script>
+<body>
+  <p id="target"> 이것은 <strong>하나의 단락</strong> 입니다. </p>
+  <button type="button" id="text"> text() </button>
+  <button type="button" id="html"> html() </button> 
+</body>
+</html>

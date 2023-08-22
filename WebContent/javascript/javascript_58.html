@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script>
+  function check(){ 
+    if(window.document.f.name.value == ''){ //Javascript 파라미터는 name속성을 받아옴
+      window.alert("글쓴이를 입력하세요");
+      f.name.focus();
+      return false;
+    }
+
+    if(f.title.value.length == 0){
+      alert('글제목을 입력하세요');
+      f.title.focus();
+      return false;
+    }
+
+    f.submit();
+  }
+</script>
+<body>
+  <form name="f" method="post" action="#">
+    <input type="text" name="name" placeholder="이름"> <br>
+    <input type="text" name="title" placeholder="제목"> <hr>
+    <input type="button" onclick="check();" value="확인">
+    <input type="reset" value="초기화">
+  </form>
+</body>
+</html>
