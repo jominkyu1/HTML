@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<style>
+  div{
+    width: 120px;
+    height: 120px;
+  }
+</style>
+
+<body>
+  <script>
+    $(document).ready(function(){
+      $('#btn01').click(function(){
+        $color = $('#div01').css('background-color');
+        $('#result').text('background-color: ' + $color);
+      });
+
+      $('#btn02').click(function(){
+        $('#div01').css('background-color', 'lightblue');
+      });
+    });
+  </script>
+
+  <div id="div01" style="background-color: lightgoldenrodyellow;"> </div>
+    <p id="result"></p>
+    <button id="btn01">RGB check</button>
+    <button id="btn02">RGB change</button>
+</body>
+</html>

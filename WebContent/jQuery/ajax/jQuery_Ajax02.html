@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<script>
+  $(function(){
+    $('#menu01').click(function(){
+      $.ajax({
+        url:"evening_menu.html",
+        dataType: 'html', // 자료형식
+        success: function(data){
+          //성공시 호출되는 콜백함수. 받아온 자료는 data에 저장
+          $('#re01').html(data);
+        }
+      });
+      return false;
+    })
+
+    $('#menu02').click(function(){
+      $.ajax({
+        url:"evening_menu.html",
+        dataType:"html",
+        success:function(data){
+          $('#re02').html($(data).find('li'));
+          //jQuery find()함수로 li태그요소만 찾아옴
+        }
+      })
+      return false;
+    })
+  })
+</script>
+<style>
+  div{
+    border: 4px solid lightcyan;
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    float: left;
+  }
+</style>
+<body>
+  <h2>jQuery 비동기식 ajax()함수 (가장 많이 사용함)</h2>
+  <div>
+    <a href="#" id="menu01">Menu 01</a>
+    <span id="re01"></span>
+  </div>
+
+  <div>
+    <a href="#" id="menu02">Menu 02</a>
+    <span id="re02"></span>
+  </div>
+</body>
+</html>

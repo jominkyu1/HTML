@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./jquery-3.7.0.min.js"></script>
+  <title>Document</title>
+</head>
+<script>
+  $(document).ready(function(){
+    $('#btn01').click(function(){
+      $('#div01').addClass('warn');
+    });
+  });
+</script>
+<style>
+  .warn{
+    background-color: lightgreen;
+    border: 2px dotted lightslategray;
+    padding: 5px;
+    text-align: center;
+  }
+</style>
+<body>
+  <button id="btn01">addClass()</button><hr>
+  <div id="div01">
+    <p>이 영역에 warn클래스 선택자로 지정된 css가 한번에 적용됩니다.</p>
+  </div>
+</body>
+</html>

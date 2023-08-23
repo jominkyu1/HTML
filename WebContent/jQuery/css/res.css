@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#page{
+  width: 960px;
+  padding: 5px;
+  margin: 20px auto;
+}
+
+#header{
+  height:50px;
+}
+
+#main{
+  width: 600px;
+  float: left;
+}
+
+#sidebar{
+  width: 300px;
+  float: right;
+}
+
+#footer{
+  clear: both;
+}
+
+@media screen and (max-width: 980px) { /*미디어 타입이 일반화면이고 최대너비가 980px이면*/
+    #page{
+      width: 94%;
+    }
+
+    #main{
+      width: 64%;
+    }
+
+    #sidebar{
+      width:30%
+    }
+}
+
+@media screen and (max-width: 700px){
+  #main{
+    float:none;
+  }
+}
+
+#header, #main, #sidebar, #footer {
+  border: 1px solid red;
+}
+
+#header {
+  background-color:lightpink;
+}
